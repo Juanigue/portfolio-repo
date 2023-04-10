@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     <main className="bg-gradient-to-r from-emerald-100 to-teal-100 px-10">
+     <main className=" bg-slate-100 px-10">
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
           <h1 className="text-xl font-sans">Mi Portfolio</h1>
@@ -42,7 +42,7 @@ export default function Home() {
           <AiFillMail />
         </div>
         <div className="flex justify-center mt-20 overflow-hidden">
-          <Image className="rounded-full w-80" src={devjuani}/>
+          <Image className="rounded-xl w-80" src={devjuani}/>
         </div>
       </section>
       
