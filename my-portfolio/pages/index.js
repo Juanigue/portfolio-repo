@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillLinkedin, AiFillGithub, AiFillMail} from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, AiFillMessage} from 'react-icons/ai';
 import Image from 'next/image';
 import devjuani from '../public/juaniFoto.jpg';
 import design from '../public/design.png';
@@ -31,79 +31,83 @@ export default function Home() {
         </nav>
         <div className="text-center p-10">
           <h2 className="text-5xl py-2 text-teal-600 font-medium">Juan Ignacio Guerrero</h2>
-          <h3 className="text-2xl py-2">Test Automation and Frontend Developer</h3>
+          <h3 className="text-2xl py-2">Test Automation Engineer and Frontend Developer</h3>
           <p className="text-md py-5 leading-8 text-gray-800">
-            Estudiante avanzado de licenciatura en Informatica y desarrollo de software en Universidad del Aconcagua, Mendoza, Argentina.
+            Estudiante avanzado de licenciatura en Informatica y desarrollo de software en <span className='text-teal-600'>Universidad del Aconcagua</span>, Mendoza, Argentina.
+            <br></br>
+            Especializado en el framework y meta-framework de <span className='text-teal-600'>React</span> y <span className='text-teal-600'>Next Js</span> para el desarrollo de paginas web.
+            <br></br>
+            Especializado en <span className='text-teal-600'>test automatizados</span> para cada tipo de sistema o pagina.
           </p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-800">
-          <AiFillLinkedin />
-          <AiFillGithub />  
-          <AiFillMail />
+          <a href='https://www.linkedin.com/in/juanignacioguerrero2203/'><AiFillLinkedin /></a>
+          <a href='https://github.com/Juanigue'><AiFillGithub /></a>
+          <a href='https://api.whatsapp.com/send?phone=2616275755'><AiFillMessage /></a>
         </div>
         <div className="flex justify-center mt-20 overflow-hidden">
           <Image className="rounded-xl w-80" src={devjuani}/>
         </div>
       </section>
-      <section className="flex justify-center items-center flex-col md:flex-row">
-  <div className="w-full md:w-1/3 text-center p-4">
-    <div className="mb-8">
-      <Image src={code} width={100} height={100} className="mx-auto" />
-    </div>
-    <h3 className="text-lg font-medium pt-8 pb-2">
-      Code your dream project
-    </h3>
-    <p className="py-2">
-      Do you have an idea for your next great website? Let's make it a
-      reality.
-    </p>
-    <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-    <p className="text-gray-800 py-1">Photoshop</p>
-    <p className="text-gray-800 py-1">Illustrator</p>
-    <p className="text-gray-800 py-1">Figma</p>
-    <p className="text-gray-800 py-1">Indesign</p>
-  </div>
-  <div className="w-full md:w-1/3 text-center p-4">
-    <div className="mb-8">
-      <Image
-        src={consulting}
-        width={100}
-        height={100}
-        className="mx-auto"
-      />
-    </div>
-    <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
-    <p className="py-2">
-      Do you have an idea for your next great website? Let's make it a
-      reality.
-    </p>
-    <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-    <p className="text-gray-800 py-1">Photoshop</p>
-    <p className="text-gray-800 py-1">Illustrator</p>
-    <p className="text-gray-800 py-1">Figma</p>
-    <p className="text-gray-800 py-1">Indesign</p>
-  </div>
-  <div className="w-full md:w-1/3 text-center p-4">
-    <div className="mb-8">
-      <Image
-        src={design}
-        width={100}
-        height={100}
-        className="mx-auto"
-      />
-    </div>
-    <h3 className="text-lg font-medium pt-8 pb-2">Teaching</h3>
-    <p className="py-2">
-      Learn how to code from a professional with years of experience.
-    </p>
-    <h4 className="py-4 text-teal-600">Coding Languages I Teach</h4>
-    <p className="text-gray-800 py-1">HTML</p>
-    <p className="text-gray-800 py-1">CSS</p>
-    <p className="text-gray-800 py-1">JavaScript</p>
-    <p className="text-gray-800 py-1">React</p>
-  </div>
-</section>
 
+      <section className="flex justify-center items-center flex-col md:flex-row">
+        <div className="w-full md:w-1/3 text-center p-4">
+          <div className="mb-8">
+            <Image src={code} width={100} height={100} className="mx-auto" />
+          </div>
+          <h3 className="text-lg font-medium pt-8 pb-2">
+            Code your dream project
+          </h3>
+          <p className="py-2">
+            Tenes alguna idea de como queres tu proximo sitio web? Hagamoslo realidad
+          </p>
+          <h4 className="py-4 text-teal-600">Coding Languages I Use</h4>
+          <p className="text-gray-800 py-1">Tailwind CSS</p>
+          <p className="text-gray-800 py-1">Java</p>
+          <p className="text-gray-800 py-1">JavaScript</p>
+          <p className="text-gray-800 py-1">React</p>
+
+        </div>
+        <div className="w-full md:w-1/3 text-center p-4">
+          <div className="mb-8">
+            <Image
+              src={consulting}
+              width={100}
+              height={100}
+              className="mx-auto"
+            />
+          </div>
+          <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
+          <p className="py-2">
+            Do you have an idea for your next great website? Let's make it a
+            reality.
+          </p>
+          <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+          <p className="text-gray-800 py-1">Photoshop</p>
+          <p className="text-gray-800 py-1">Illustrator</p>
+          <p className="text-gray-800 py-1">Figma</p>
+          <p className="text-gray-800 py-1">Indesign</p>
+        </div>
+        <div className="w-full md:w-1/3 text-center p-4">
+          <div className="mb-8">
+            <Image
+              src={design}
+              width={100}
+              height={100}
+              className="mx-auto"
+            />
+          </div>
+          <h3 className="text-lg font-medium pt-8 pb-2">Design Thinking</h3>
+          <p className="py-2">
+            Learn how to code from a professional with years of experience.
+          </p>
+          <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
+          <p className="text-gray-800 py-1">Photoshop</p>
+          <p className="text-gray-800 py-1">Illustrator</p>
+          <p className="text-gray-800 py-1">Figma</p>
+          <p className="text-gray-800 py-1">Indesign</p>
+        </div>
+      </section>
      </main>
     </>
   )
