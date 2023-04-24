@@ -1,1 +1,1 @@
-# Desarrollo de mi Portfolio, actualizado a NextJs 13.
+# Desarrollo de mi Portfolio, actualizado a Next.js 13.
